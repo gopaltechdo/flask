@@ -2,7 +2,7 @@ from flask import Flask, Response
 import cv2
 
 app = Flask(__name__)
-camera = cv2.VideoCapture(1)  # Change index if using a different webcam
+camera = cv2.VideoCapture(0)  # Change index if using a different webcam
 
 def generate_frames():
     while True:
